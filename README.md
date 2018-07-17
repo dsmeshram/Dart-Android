@@ -29,14 +29,27 @@ in Application class initlized dartlib, pass the application context and your se
 @Override
 public void onCreate() {
     super.onCreate();
-    Dartlib.getInstance().init(this,"http://172.18.14.87/rest/response.json");
+    Dartlib.getInstance().init(this,"http://<hostname>/rest/response.json");
 }
 
 now your lib ready to live
 
 get updated value form server and set to the UI component
 
- ((TextView)findViewById(R.id.appname)).setText(Dartlib.getInstance().getValueWithAlt("app_name","Facebook"));
+ ((TextView)findViewById(R.id.appname)).setText(Dartlib.getInstance().getValueWithAlt("app_name","Appname"));
+ 
+response.json structure(key value paire)
+
+{
+	"vr":10,
+	"app_name":"App Name",
+	"app_name_text_color": "#FFFFFF",
+	"app_message":"versition 0.8",
+	"app_message_text_color": "#FFFFFF",
+	"bg_color":"#f1f1f1"
+}
+
+
 
 
     
