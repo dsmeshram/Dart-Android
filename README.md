@@ -21,23 +21,28 @@ How to use?
 Create the Android application using API level 21 and above
 add dartlib lib in your project
 
-implementation project(":dartlib")
+<code>implementation project(":dartlib")</code>
 
 Create Application class in your Applicaion
 in Application class initlized dartlib, pass the application context and your server response json file
 
+<code>
 @Override
 public void onCreate() {
     super.onCreate();
     Dartlib.getInstance().init(this,"http://yourhostname/rest/response.json");
 }
+</code>
 
 now your lib ready to live
 
 get updated value form server and set to the UI component
 
+<code>
+	
  ((TextView)findViewById(R.id.appname)).setText(Dartlib.getInstance().getValueWithAlt("app_name","Appname"));
- 
+</code>
+
 response.json structure(key value paire)
 
 {
