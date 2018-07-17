@@ -1,12 +1,10 @@
 # Dart-Android
 
-Every day in developer life they need to add/update/delete something in there app. the main pain is they need to update there app and publish again and again. its take too much time sometime(some time google may update the policy :( and some time developer missed something). let's try to solved this.
-
-I am going to provide you the lib that lib through you can solved this issue
-
-very first let solved the WH-Type question's
+Very first let's solve the WH-Type question's
 
 Why is Dart?
+
+Every day in developer life they need to add/update/delete something in there app. the main pain is they need to update there app and publish again and again. its take too much time sometime(some time google may update the policy :( and some time developer missed something). let's try to solved this.
 
 What it is?
 
