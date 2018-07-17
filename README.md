@@ -29,7 +29,7 @@ in Application class initlized dartlib, pass the application context and your se
 @Override
 public void onCreate() {
     super.onCreate();
-    Dartlib.getInstance().init(this,"http://<hostname>/rest/response.json");
+    Dartlib.getInstance().init(this,"http://yourhostname/rest/response.json");
 }
 
 now your lib ready to live
